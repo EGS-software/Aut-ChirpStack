@@ -14,4 +14,6 @@ search_box.send_keys("GitHub jawc")
 
 search_box.send_keys(Keys.RETURN)
 
+time.sleep(5)
+
 driver.quit()
