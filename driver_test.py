@@ -7,6 +7,11 @@ driver = webdriver.Safari()
 driver.get("https://www.google.com")
 
 time.sleep(5)
-print(driver.title)
+
+search_box = driver.find_element(By.NAME, "q")
+
+search_box.send_keys("GitHub jawc")
+
+search_box.send_keys(Keys.RETURN)
 
 driver.quit()
