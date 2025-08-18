@@ -6,7 +6,7 @@ import time
 driver = webdriver.Safari()
 driver.get("https://www.google.com")
 
-time.sleep(5)
+time.sleep(2)
 
 search_box = driver.find_element(By.NAME, "q")
 
