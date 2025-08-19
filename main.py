@@ -7,3 +7,4 @@ def open_chirpstack():
     driver = webdriver.Safari()
 
     driver.get("http://localhost:8080")
+    time.sleep(2)
