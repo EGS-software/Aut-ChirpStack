@@ -9,6 +9,12 @@ def open_chirpstack():
     driver.get("http://localhost:8080")
     time.sleep(2)
 
+    email_input = driver.find_element(By.ID, "email")
+
+
+
+
+
 def main():
     open_chirpstack()
     # Additional logic can be added here if needed
