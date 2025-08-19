@@ -10,6 +10,7 @@ def open_chirpstack():
     time.sleep(2)
 
     email_input = driver.find_element(By.ID, "email")
+    password_input = driver.find_element(By.ID, "password")
 
 
 
