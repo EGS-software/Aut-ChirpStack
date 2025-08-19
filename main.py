@@ -18,6 +18,7 @@ def open_chirpstack():
     password_input.send_keys("admin")
     submit_button.click()
 
+    time.sleep(5)
 
 
 
