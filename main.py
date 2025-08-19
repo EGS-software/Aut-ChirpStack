@@ -12,3 +12,6 @@ def open_chirpstack():
 def main():
     open_chirpstack()
     # Additional logic can be added here if needed
+
+if __name__ == "__main__":
+    main()
