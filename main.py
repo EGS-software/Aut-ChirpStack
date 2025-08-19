@@ -16,6 +16,7 @@ def open_chirpstack():
 
     email_input.send_keys("admin")
     password_input.send_keys("admin")
+    submit_button.click()
 
 
 
