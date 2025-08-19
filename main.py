@@ -13,6 +13,7 @@ def open_chirpstack():
     password_input = driver.find_element(By.ID, "password")
 
     email_input.send_keys("admin")
+    password_input.send_keys("admin")
 
 
 
