@@ -19,7 +19,7 @@ def open_chirpstack():
     submit_button.click()
 
     applications_button = driver.find_element(By.CSS_SELECTOR, ".ant-menu-title-content")
-
+    applications_button.click()
     time.sleep(5)
 
 
