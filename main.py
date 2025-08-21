@@ -23,6 +23,9 @@ def open_chirpstack():
     applications_button.click()
     time.sleep(5)
 
+    cell = driver.find_element(By.CLASS_NAME, "ant-table-cell")
+    
+
 
 
 def main():
