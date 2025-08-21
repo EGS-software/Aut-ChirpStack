@@ -18,6 +18,8 @@ def open_chirpstack():
     password_input.send_keys("admin")
     submit_button.click()
 
+    applications_button = driver.find_element(By.CSS_SELECTOR, ".ant-menu-title-content")
+
     time.sleep(5)
 
 
