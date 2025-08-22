@@ -49,3 +49,6 @@ def open_chirpstack():
 
     # Mantém o navegador aberto (ou fecha se preferir)
     # driver.quit()
+
+def main():
+    open_chirpstack()
