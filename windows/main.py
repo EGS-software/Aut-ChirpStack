@@ -52,3 +52,6 @@ def open_chirpstack():
 
 def main():
     open_chirpstack()
+
+if __name__ == "__main__":
+    main()
