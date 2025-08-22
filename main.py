@@ -25,6 +25,7 @@ def open_chirpstack():
 
     cell = driver.find_element(By.XPATH, "//a[@href='#/tenants/cde402c9-1549-4de5-b37c-b32755f5a70c/applications/e38b1e6a-599e-4a2d-9de3-695ea5b57877']")
     cell.click()
+    time.sleep(5)
 
 
 
