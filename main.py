@@ -4,6 +4,8 @@ from selenium.webdriver.common.keys import Keys
 import time
 from dotenv import load_dotenv
 
+load_dotenv()  # Load environment variables from .env file
+
 def open_chirpstack():
     driver = webdriver.Safari()
 
