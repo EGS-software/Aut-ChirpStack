@@ -5,6 +5,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager # type: ignore
 import time
+from dotenv import load_dotenv
+import os
 
 def open_chirpstack():
     # Configurações do Chrome (opcional: pode abrir maximizado, sem logs, etc.)
