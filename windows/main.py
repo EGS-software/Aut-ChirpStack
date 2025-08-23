@@ -8,6 +8,8 @@ import time
 from dotenv import load_dotenv
 import os
 
+load_dotenv()  # Load environment variables from .env file
+
 def open_chirpstack():
     # Configurações do Chrome (opcional: pode abrir maximizado, sem logs, etc.)
     chrome_options = Options()
