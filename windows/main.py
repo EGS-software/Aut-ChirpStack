@@ -9,6 +9,8 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()  # Load environment variables from .env file
+EMAIL = os.getenv("EMAIL")
+PASSWORD = os.getenv("PASSWORD")
 
 def open_chirpstack():
     # Configurações do Chrome (opcional: pode abrir maximizado, sem logs, etc.)
