@@ -28,8 +28,8 @@ def open_chirpstack():
     password_input = driver.find_element(By.ID, "password")
     submit_button = driver.find_element(By.CSS_SELECTOR, ".ant-btn-primary")
 
-    email_input.send_keys("admin")
-    password_input.send_keys("admin")
+    email_input.send_keys(EMAIL) # pyright: ignore[reportArgumentType]
+    password_input.send_keys(PASSWORD) # pyright: ignore[reportArgumentType]
     submit_button.click()
     time.sleep(2)
 
