@@ -7,6 +7,8 @@ import os
 
 load_dotenv()  # Load environment variables from .env file
 
+EMAIL = os.getenv("EMAIL")
+
 def open_chirpstack():
     driver = webdriver.Safari()
 
