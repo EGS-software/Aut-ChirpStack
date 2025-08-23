@@ -16,8 +16,8 @@ def open_chirpstack():
     driver.get("http://localhost:8080")
     time.sleep(2)
 
-    email_input = driver.find_element(By.ID, EMAIL)
-    password_input = driver.find_element(By.ID, PASSWORD)
+    email_input = driver.find_element(By.ID, "email")
+    password_input = driver.find_element(By.ID, "password")
     submit_button = driver.find_element(By.CSS_SELECTOR, ".ant-btn-primary")
 
 
