@@ -32,19 +32,19 @@ def open_chirpstack():
     submit_button.click()
     time.sleep(2)
 
-    applications_button = driver.find_element(By.XPATH, "//a[@href='#/tenants/cde402c9-1549-4de5-b37c-b32755f5a70c/applications']")    
+    applications_button = driver.find_element(By.XPATH, applications_button_xpath)    
     applications_button.click()
     time.sleep(5)
 
-    cell = driver.find_element(By.XPATH, "//a[@href='#/tenants/cde402c9-1549-4de5-b37c-b32755f5a70c/applications/e38b1e6a-599e-4a2d-9de3-695ea5b57877']")
+    cell = driver.find_element(By.XPATH, cell_xpath)
     cell.click()
     time.sleep(5)
 
-    devEUI_button = driver.find_element(By.XPATH, "//a[@href='#/tenants/cde402c9-1549-4de5-b37c-b32755f5a70c/applications/e38b1e6a-599e-4a2d-9de3-695ea5b57877/devices/08a60f4954ee1820']")
+    devEUI_button = driver.find_element(By.XPATH, devEUI_button_xpath)
     devEUI_button.click()
     time.sleep(5)
 
-    event_button = driver.find_element(By.XPATH, "//a[@href='#/tenants/cde402c9-1549-4de5-b37c-b32755f5a70c/applications/e38b1e6a-599e-4a2d-9de3-695ea5b57877/devices/08a60f4954ee1820/events']")
+    event_button = driver.find_element(By.XPATH, event_button_xpath)
     event_button.click()
     time.sleep(5)
 
