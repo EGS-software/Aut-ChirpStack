@@ -11,6 +11,10 @@ load_dotenv()  # Load environment variables from .env file
 
 EMAIL = os.getenv("EMAIL")
 PASSWORD = os.getenv("PASSWORD")
+applications_button_xpath = "//a[@href='#/tenants/cde402c9-1549-4de5-b37c-b32755f5a70c/applications']"
+cell_xpath = "//a[@href='#/tenants/cde402c9-1549-4de5-b37c-b32755f5a70c/applications/e38b1e6a-599e-4a2d-9de3-695ea5b57877']"
+devEUI_button_xpath = "//a[@href='#/tenants/cde402c9-1549-4de5-b37c-b32755f5a70c/applications/e38b1e6a-599e-4a2d-9de3-695ea5b57877/devices/08a60f4954ee1820']"
+event_button_xpath = "//a[@href='#/tenants/cde402c9-1549-4de5-b37c-b32755f5a70c/applications/e38b1e6a-599e-4a2d-9de3-695ea5b57877/devices/08a60f4954ee1820/events']"
 
 def open_chirpstack():
     driver = webdriver.Safari()
