@@ -5,6 +5,12 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager # type: ignore
 import time
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Load environment variables from .env file
+EMAIL = os.getenv("EMAIL")
+PASSWORD = os.getenv("PASSWORD")
 
 def open_chirpstack():
     # Configurações do Chrome (opcional: pode abrir maximizado, sem logs, etc.)
@@ -22,8 +28,8 @@ def open_chirpstack():
     password_input = driver.find_element(By.ID, "password")
     submit_button = driver.find_element(By.CSS_SELECTOR, ".ant-btn-primary")
 
-    email_input.send_keys("admin")
-    password_input.send_keys("admin")
+    email_input.send_keys(EMAIL) # pyright: ignore[reportArgumentType]
+    password_input.send_keys(PASSWORD) # pyright: ignore[reportArgumentType]
     submit_button.click()
     time.sleep(2)
 
