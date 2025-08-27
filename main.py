@@ -19,7 +19,7 @@ def open_chirpstack():
     time.sleep(2)
 
     email_input = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "email")))
-    password_input = driver.find_element(By.ID, "password")
+    password_input = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "password")))   
     submit_button = driver.find_element(By.CSS_SELECTOR, ".ant-btn-primary")
 
 
