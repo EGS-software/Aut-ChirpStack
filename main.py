@@ -20,7 +20,7 @@ def open_chirpstack():
 
     email_input = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "email")))
     password_input = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "password")))   
-    submit_button = driver.find_element(By.CSS_SELECTOR, ".ant-btn-primary")
+    submit_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".ant-btn-primary")))
 
 
     email_input.send_keys(EMAIL) # pyright: ignore[reportArgumentType]
