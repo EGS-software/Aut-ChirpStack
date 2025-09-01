@@ -40,7 +40,7 @@ def open_chirpstack():
     cell.click()
     time.sleep(5)
 
-    devEUI_button = driver.find_element(By.XPATH, devEUI_button_xpath)
+    devEUI_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, devEUI_button_xpath)))
     devEUI_button.click()
     time.sleep(5)
 
