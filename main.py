@@ -32,7 +32,7 @@ def open_chirpstack():
     submit_button.click()
     time.sleep(2)
 
-    applications_button = driver.find_element(By.XPATH, applications_button_xpath)    
+    applications_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, applications_button_xpath)))    
     applications_button.click()
     time.sleep(5)
 
