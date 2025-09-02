@@ -32,19 +32,19 @@ def open_chirpstack():
     submit_button.click()
     time.sleep(2)
 
-    applications_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, applications_button_xpath)))    
+    applications_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, applications_button_xpath)))    
     applications_button.click()
     time.sleep(5)
 
-    cell = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, cell_xpath)))
+    cell = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, cell_xpath)))
     cell.click()
     time.sleep(5)
 
-    devEUI_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, devEUI_button_xpath)))
+    devEUI_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, devEUI_button_xpath)))
     devEUI_button.click()
     time.sleep(5)
 
-    event_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, event_button_xpath)))
+    event_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, event_button_xpath)))
     event_button.click()
     time.sleep(5)
 
