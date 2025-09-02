@@ -30,23 +30,18 @@ def open_chirpstack():
     email_input.send_keys(EMAIL) # pyright: ignore[reportArgumentType]
     password_input.send_keys(PASSWORD) # pyright: ignore[reportArgumentType]
     submit_button.click()
-    time.sleep(2)
 
     applications_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, applications_button_xpath)))    
     applications_button.click()
-    time.sleep(5)
 
     cell = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, cell_xpath)))
     cell.click()
-    time.sleep(5)
 
     devEUI_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, devEUI_button_xpath)))
     devEUI_button.click()
-    time.sleep(5)
 
     event_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, event_button_xpath)))
     event_button.click()
-    time.sleep(5)
 
 
 
